@@ -13,6 +13,9 @@
 		0C59347A24F4C24100F18B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C59347924F4C24100F18B96 /* Assets.xcassets */; };
 		0C59347D24F4C24100F18B96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C59347C24F4C24100F18B96 /* Preview Assets.xcassets */; };
 		0C59348024F4C24100F18B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C59347E24F4C24100F18B96 /* LaunchScreen.storyboard */; };
+		0C59348824F4C2B300F18B96 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C59348724F4C2B300F18B96 /* ImagePicker.swift */; };
+		0C59348A24F4C45D00F18B96 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C59348924F4C45D00F18B96 /* ImageClassifier.swift */; };
+		0C59348C24F4CBC900F18B96 /* FoodClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0C59348B24F4CBC900F18B96 /* FoodClassifier 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0C59347C24F4C24100F18B96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C59347F24F4C24100F18B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C59348124F4C24100F18B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C59348724F4C2B300F18B96 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0C59348924F4C45D00F18B96 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		0C59348B24F4CBC900F18B96 /* FoodClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "FoodClassifier 1.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		0C59347224F4C23E00F18B96 /* CoreMLSharing */ = {
 			isa = PBXGroup;
 			children = (
+				0C59348E24F4D63700F18B96 /* Helper */,
+				0C59348D24F4D62400F18B96 /* Model */,
 				0C59347324F4C23E00F18B96 /* AppDelegate.swift */,
 				0C59347524F4C23E00F18B96 /* SceneDelegate.swift */,
 				0C59347724F4C23E00F18B96 /* ContentView.swift */,
@@ -73,6 +81,23 @@
 				0C59347C24F4C24100F18B96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C59348D24F4D62400F18B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C59348B24F4CBC900F18B96 /* FoodClassifier 1.mlmodel */,
+				0C59348924F4C45D00F18B96 /* ImageClassifier.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C59348E24F4D63700F18B96 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0C59348724F4C2B300F18B96 /* ImagePicker.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C59347424F4C23E00F18B96 /* AppDelegate.swift in Sources */,
+				0C59348824F4C2B300F18B96 /* ImagePicker.swift in Sources */,
+				0C59348C24F4CBC900F18B96 /* FoodClassifier 1.mlmodel in Sources */,
+				0C59348A24F4C45D00F18B96 /* ImageClassifier.swift in Sources */,
 				0C59347624F4C23E00F18B96 /* SceneDelegate.swift in Sources */,
 				0C59347824F4C23E00F18B96 /* ContentView.swift in Sources */,
 			);
